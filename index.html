@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="it">
-	<head> 
-		<link href="style.css" rel="stylesheet">
-		<title>DY3 - be creative</title>
-	</head>
-	<body>
-	</body>
-	<footer>
-	</footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DY3 | Creative Drawings</title>
+    <style>
+        /* Reset e Stili Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+
+        /* Header */
+        header { background: #000; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 500; }
+
+        /* Hero Section */
+        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: #fff; border-bottom: 5px solid #000; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        /* Galleria Immagini */
+        .gallery { padding: 50px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #fff; padding: 15px; border: 1px solid #ddd; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 250px; object-fit: cover; background: #eee; margin-bottom: 15px; }
+
+        /* Footer */
+        footer { background: #000; color: #fff; text-align: center; padding: 2rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DY3</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Portfolio</a>
+            <a href="#contact">Contatti</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Creatività in ogni linea.</h1>
+        <p>Esplora il mondo dei disegni firmati DY3.</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <!-- Elemento Galleria 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com" alt="Disegno 1">
+            <h3>Concept Art</h3>
+            <p>Esplorazione di forme e colori.</p>
+        </div>
+        <!-- Elemento Galleria 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com" alt="Disegno 2">
+            <h3>Illustrazione Digitale</h3>
+            <p>Dettagli curati nei minimi particolari.</p>
+        </div>
+        <!-- Elemento Galleria 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com" alt="Disegno 3">
+            <h3>Schizzi a Matita</h3>
+            <p>Il fascino intramontabile del tratto manuale.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2023 DY3 - Tutti i diritti riservati.</p>
+        <p>Email: doityourself3.0000@gmail.com</p>
+    </footer>
+
+</body>
 </html>
